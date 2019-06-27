@@ -1,0 +1,31 @@
+<h1>Employee Work</h1>
+
+<h2>Name of Helper Employee:{{name}}</h2><br><br>
+Name of Collector: <input type="text" [value]="name"><br>
+
+
+<table *ngIf="show">
+    <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>address</th>
+        <th>Age</th>
+        <th>Contact</th>
+    </tr>
+    <tr *ngFor="let s of student">
+        <td>{{s.roll}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.add}}</td>
+        <td>{{s.age}}</td>
+        <td>{{s.contact}}</td>
+    </tr>
+</table>
+<br><br>
+<button (click)="onclick()">{{show? 'Hide' : 'Show'}} table</button><br><br>
+<h2>
+    Name:{{name}}
+    <br>
+    Name :<input type="text" [(ngModel)]="name">
+</h2>
+<img src="C:\angular1\mysecondapp\src\assets\image" Width="355" height="500"/>
+
